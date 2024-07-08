@@ -6,6 +6,8 @@ Seu desenvolvimento é baseado em React utilizando o conceito de componentizacao
 
 Como optamos por nos concentrar no desenvolviemnto puramente de front end, nessa versao nao foi utilizada uma API. Dessa forma, um arquivo em Json foi utilizado para a leitura das informacoes iniciais simulando uma tabela do banco de dados. 
 
+Na tela de despesas, voce poderá incluir a lista de despesas por tipo e, posteriormente, verificar na tela de resumo, um conjunto de cards com gasto total para cada tipo de despesa registrada.
+
 ## Como executar
 
 Será necessário ter o [Nodejs, ou o npm,](https://nodejs.org/en/download/) instalado. 
