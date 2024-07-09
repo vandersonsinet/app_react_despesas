@@ -8,7 +8,6 @@ export default function Cabecalho(props) {
                 <ul>
                     <li><Link to="/">Home </Link></li>
                     <li><Link to="/Despesas">Despesas </Link></li>
-                    <li><Link to="/Sobre">Sobre </Link></li>
                 </ul>
                 <h2>{props.titulo}</h2>
             </div>
