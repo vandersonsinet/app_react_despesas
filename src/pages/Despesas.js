@@ -45,8 +45,10 @@ const submit = (e) => {
       } 
     ]
 
-   setListaDespesas(listaDespesas.concat(despesa));
-    fechaModal();
+  if (valores.descricao !== '' || valores.quantidade !== '' || valores.valor !== ''){
+      setListaDespesas(listaDespesas.concat(despesa));
+    }
+    fechaModal(); 
   }
 
 const navigate = useNavigate();
@@ -100,8 +102,8 @@ const verificarResumo = () => {
                             <InputText id="valor" placeholder="Valor" name="valor"/>
                         </div>
                         <menu className='menuBotoes'>
-                            <Botao id="cancelar" className="btnCancelar" acao={fechaModal} value="Cancelar"></Botao>
-                            <Botao type="submit"  id="botaoSalvar" className="btnSalvar" value="Salvar"></Botao>
+                            <Botao type="button" id="cancelar" className="btnCancelar" acao={fechaModal} value="Cancelar"></Botao>
+                            <Botao id="botaoSalvar" className="btnSalvar" value="Salvar"></Botao>
                         </menu>
                     </form>
                 </div>

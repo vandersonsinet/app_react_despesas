@@ -3,6 +3,8 @@ import Cabecalho from '../components/Cabecalho'
 import Rodape from '../components/Rodape'
 import Card from '../components/Card'
 import { useLocation } from 'react-router-dom';
+import Botao from '../components/Botao'
+import { useNavigate } from 'react-router-dom';
 
 export default function Resumo() {
   const location = useLocation();
@@ -19,6 +21,12 @@ export default function Resumo() {
       return aux;
   }, {});
 
+
+  const navigate = useNavigate();
+  const voltar = () => {
+    navigate('/Despesas', { state: { listaDespesas } });
+  };
+
     return (
       <div>
         <Cabecalho titulo="Resumo das despesas"/>
@@ -32,6 +40,9 @@ export default function Resumo() {
                 />
             ))}
         </div>
+        <menu className='menuBotoes'>
+            <Botao type="button" acao={voltar} className="btnSalvar" value="Voltar"></Botao>
+        </menu>
         <Rodape/>
       </div>
     );
