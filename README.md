@@ -2,7 +2,7 @@
 
 O objetivo desse sistema é oferecer um registro das suas despesas e ajudá-lo neste controle.
 
-Seu desenvolvimento é baseado em React utilizando o conceito de componentização. Foi utilizado o conceito de reutilizaçao de componentes nas páginas, o que torna o codigo mais limpo e dinâmico.
+Seu desenvolvimento é baseado em React utilizando o conceito de componentização. Foram reutilizados de componentes nas páginas, facilitando a mnutenção e a escalabilidade do codigo.
 
 Como optamos por nos concentrar no desenvolviemnto puramente de front end, nessa versão não utilizamos uma API. Dessa forma, um arquivo em Json foi utilizado para a leitura das informacoes iniciais simulando uma tabela do banco de dados. 
 
